@@ -1,0 +1,108 @@
+:root {
+  --verde-claro: #d8e7bf;  
+  --verde-medio: #588157; 
+  --verde-oscuro: #3A5A40;
+  --verde-profundo: #344E41;
+  --gris-beige: #DAD7CD;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: var(--verde-profundo);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Logo {
+  display: flex;
+  float: left;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--verde-profundo);
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+}
+header nav ul button{
+  padding: auto;
+  border: none;
+  background-color: var(--verde-medio);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  
+  color: var(--verde-medio);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--verde-claro);
+}
+
+/* ---------- CUERPO ---------- */
+body {
+  background-color: var(--gris-beige);
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- BARRA DE BÚSQUEDA ---------- */
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+  height: 100px;
+}
+
+.buscador input {
+  padding: 10px;
+  border: 2px solid var(--verde-medio);
+  border-radius: 10px;
+  width: 250px;
+  outline: none;
+}
+
+.buscador button {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--verde-medio);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  background-color: var(--verde-oscuro);
+}
+
+/* ---------- CONTENEDOR CENTRAL ---------- */
+.cont {
+  height: 500px;
+  background-color: var(--verde-claro);
+}
+
+h2 {
+  color: var(--verde-profundo);
+  text-align: center;
+}
+
+
+footer {
+  background-color: var(--verde-oscuro);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

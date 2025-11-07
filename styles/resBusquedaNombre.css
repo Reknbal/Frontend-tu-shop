@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------*/
+/*----------------------------- HEADER -----------------------------*/
+/*------------------------------------------------------------------*/
+header {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3A5A40;
+  display: flex;
+  justify-content: space-between; /* separa el logo y el menú */
+  align-items: center;            /* centra verticalmente */
+  padding: 10px 30px;             /* agrega espacio interno */
+}
+
+header .Logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Menu ul {
+  list-style: none;
+  display: flex;                  /* pone los li en línea */
+  gap: 20px;                      /* separación entre los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.Menu a:hover {
+  color: #d8e7bf; /* un verde claro o color destacado */
+}
+
+/*---------------------------*/
+/*¨---- BARA DE BUSQUEDA ----*/
+/*---------------------------*/
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.search-box input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #588157;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #588157;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #3A5A40;
+}
+

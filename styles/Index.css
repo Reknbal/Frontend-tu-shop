@@ -38,12 +38,49 @@ header nav ul button{
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  
+}
+.menu-conte {
+  position: relative; /* necesario para posicionar el desplegable */
+  display: inline-block;
 }
 
+/* Lista desplegable (oculta por defecto) */
+.menu-desplegable {
+  display: none;
+  position: absolute;
+  top: 100%; /* justo debajo del botón */
+  left: -100px;
+  background-color: var(--verde-profundo);
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+/* Estilos de los enlaces */
+.menu-desplegable li a {
+  display: block;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-desplegable li a:hover {
+  background-color: var(--verde-medio);
+  border-radius: 5px;
+}
+
+/* Mostrar menú cuando el mouse pasa por encima del contenedor */
+.menu-conte:hover .menu-desplegable {
+  display: block;
+}
 header nav ul li a {
-  
+   text-decoration: none;
   color: var(--verde-medio);
   font-weight: bold;
+ 
 }
 
 a:hover {

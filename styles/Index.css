@@ -4,6 +4,7 @@
   --verde-oscuro: #3A5A40;
   --verde-profundo: #344E41;
   --gris-beige: #DAD7CD;
+  --verde-header: #194339;
 }
 
 /* ---------- HEADER ---------- */
@@ -25,13 +26,13 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--verde-profundo);
+  background-color: var(--verde-header);
   text-align: center;
-  gap: 10px;
+  gap: 5px;
   list-style: none;
 }
 header nav ul button{
-  padding: auto;
+  padding: 7px;
   border: none;
   background-color: var(--verde-medio);
   color: white;

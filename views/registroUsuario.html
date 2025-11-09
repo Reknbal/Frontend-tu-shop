@@ -38,12 +38,13 @@
             <input type="password" id="contraseña" placeholder="Inserte contraseña..." required>
             
             <label>Teléfono:</label>
-            <input type="tel" name="telefono" pattern="[0-9]{6,}" title="Debe tener al menos 6 números" minlength="6" inputmode="numeric">
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{6,}" title="Debe tener al menos 6 números" minlength="6" inputmode="numeric">
             
-            <button>Registrar</button>
+            <button type="submit" id="btnRegUsuario">Registrar</button>
         </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/regUsuario.js"></script>
 </body>
 </html>

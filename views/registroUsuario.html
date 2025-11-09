@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/registroUsuario.css">
+</head>
+<body>
+    <header> 
+        <div class="Logo">
+            <a href="../index.html">TuSHooP🎈</a>
+        </div> 
+            <nav class="Menu"> 
+                <ul> <li><a href="#">Menu</a>
+                </li> <li><a href="#">categorias</a>
+                </li> <li><a href="#">nombre</a></li>
+                </ul>
+            </nav>
+    
+    </header>
+    <h1> Registro de usuario </h1>
+    <div class="formRegistro">
+        <form id="registroUsuario">
+            <label>DNI:</label>
+            <input type="number" id="dni_usuario" placeholder="Inserte DNI..." required>
+            
+            <label>Nombre completo de usuario:</label>
+            <input type="text" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" placeholder="Solo se admiten letras y espacios" title="Solo se permiten letras y espacios">
+
+            <label>Nombre de la cuenta:</label>
+            <input type="text" id="nombre_usuario" placeholder="Inserte nombre de usuario..." required>
+            
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Inserte email..." required>
+            
+            <label>contraseña:</label>
+            <input type="password" id="contraseña" placeholder="Inserte contraseña..." required>
+            
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" pattern="[0-9]{6,}" title="Debe tener al menos 6 números" minlength="6" inputmode="numeric">
+            
+            <button>Registrar</button>
+        </form>
+    </div>
+</body>
+</html>

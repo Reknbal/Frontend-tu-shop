@@ -8,7 +8,7 @@ axios.get(API_URL)
   .catch(err => console.error(err));
 
 //
-
+const form = document.getElementById("formRegistro");
 // === CREAR NUEVO USUARIO ===
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ axios.get(API_URL)
     const password = document.getElementById("contraseña").value;
     const num_telefono = document.getElementById("telefono").value;
 
-    const nuevaTarea = {
+    const CreateUser = {
       dni_usuario,
       nombre,
       nombre_usuario,
@@ -30,16 +30,15 @@ axios.get(API_URL)
     };
 
      try {
-      const res = await axios.post(API_URL, createTiendas);
+      const res = await axios.post(API_URL, CreateUser);
       console.log("Respuesta del servidor:", res.data);
 
       form.reset();
-      cargarTareas();
     } catch (error) {
       console.error("Error al enviar tarea:", error);
       alert("Error al crear la tarea");
-    }
-  });
+  }
+}); 
 
 
     

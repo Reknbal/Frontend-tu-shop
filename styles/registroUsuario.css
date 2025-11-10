@@ -1,20 +1,25 @@
-/* --verde-claro: #d8e7bf; 
---verde-medio: #588157; 
---verde-oscuro: #3A5A40;
- --verde-profundo: #344E41;
-  --gris-beige: #DAD7CD; */
+:root {
+  --verde-claro: #d8e7bf;  
+  --verde-medio: #588157; 
+  --verde-oscuro: #3A5A40;
+  --verde-profundo: #344E41;
+  --gris-beige: #DAD7CD;
+  --verde-header: #194339;
+}
 
 /*------------------------------------------------------------------*/
 /*----------------------------- HEADER -----------------------------*/
 /*------------------------------------------------------------------*/
 header {
+  width: 100%;
   margin: 0;
+  padding: 10px 30px;
   font-family: Arial, sans-serif;
-  background-color: #3A5A40;
+  background-color: var(--verde-header);
   display: flex;
-  justify-content: space-between; /* separa el logo y el menú */
-  align-items: center;            /* centra verticalmente */
-  padding: 10px 30px;             /* agrega espacio interno */
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 header .Logo a {
@@ -24,68 +29,96 @@ header .Logo a {
   font-weight: bold;
 }
 
-.Menu ul {
+header nav ul {
   list-style: none;
-  display: flex;                  /* pone los li en línea */
-  gap: 20px;                      /* separación entre los elementos */
+  display: flex;
   margin: 0;
   padding: 0;
+  gap: 20px;
 }
 
-.Menu a {
+header nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.Menu a:hover {
-  color: #d8e7bf; /* un verde claro o color destacado */
+header nav ul li a:hover {
+  background-color: var(--verde-medio);
 }
 
 /*------------------------------------------------------------------*/
-/*------------------------------ BODY ------------------------------*/
+/*--------------------------- CUERPO -------------------------------*/
 /*------------------------------------------------------------------*/
+body {
+  margin: 0;
+  background-color: var(--verde-claro);
+  font-family: Arial, sans-serif;
+}
+
 h1 {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 10px;         /* separación con la línea */
-  padding-bottom: 5px;         /* espacio interior antes de la línea */
-  border-bottom: 2px solid #3A5A40; /* color y grosor del borde */
+  color: var(--verde-profundo);
+  margin-top: 40px;
 }
 
+/*------------------------------------------------------------------*/
+/*--------------------------- FORMULARIO ---------------------------*/
+/*------------------------------------------------------------------*/
 .formRegistro {
-  margin-top: 40px; /* separa el form del header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-
-body { 
-    font-family: Arial, sans-serif;
-    /*margin: 40px;*/
-    background: #d8e7bf;
-    color: #333; 
-    } 
-    
-form { 
-    display: flex; 
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;  
-} 
-input, textarea, button {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc; 
-} 
-button {
-    background-color: #588157;
-    color: white;
-    cursor: pointer;
+.formRegistro form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
- button:hover { 
-    background-color: #3A5A40;
-} 
- ul { 
-    list-style: none;
-     padding: 0; 
+
+.formRegistro label {
+  font-weight: bold;
+  color: var(--verde-profundo);
+  margin-bottom: 3px;
+}
+
+.formRegistro input {
+  padding: 10px;
+  border: 2px solid var(--verde-medio);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.formRegistro input:focus {
+  border-color: var(--verde-oscuro);
+}
+
+/*------------------------------------------------------------------*/
+/*--------------------------- BOTÓN --------------------------------*/
+/*------------------------------------------------------------------*/
+.formRegistro button {
+  background-color: var(--verde-medio);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.formRegistro button:hover {
+  background-color: var(--verde-oscuro);
 }

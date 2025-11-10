@@ -1,0 +1,157 @@
+/*----------------------------------------------
+               PALETA DE COLORES
+-----------------------------------------------*/
+:root {
+  --verde-claro: #d8e7bf;
+  --verde-medio: #588157;
+  --verde-oscuro: #3A5A40;
+  --verde-profundo: #194339;
+  --gris-beige: #DAD7CD;
+}
+
+/*----------------------------------------------
+                  HEADER
+-----------------------------------------------*/
+header {
+  margin: 0;
+  background-color: var(--verde-profundo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .Logo img {
+  height: 70px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.Menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------------
+              BOTONES DEL MENÚ
+-----------------------------------------------*/
+.Menu button {
+  background-color: var(--verde-medio);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Menu button:hover {
+  background-color: var(--verde-oscuro);
+  transform: scale(1.05);
+}
+
+.Menu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Menu a:hover {
+  color: var(--verde-claro);
+}
+
+/* Icono menú hamburguesa */
+.Menu svg {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+}
+
+.Menu button:last-child {
+  background-color: transparent;
+  border: 2px solid var(--verde-claro);
+  padding: 6px 10px;
+}
+
+/*----------------------------------------------
+                  BODY
+-----------------------------------------------*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--verde-claro);
+  color: #333;
+}
+
+/*----------------------------------------------
+                 FORMULARIO
+-----------------------------------------------*/
+.container-form {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: var(--gris-beige);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: var(--verde-profundo);
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--verde-oscuro);
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--verde-profundo);
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+input[type="file"] {
+  background-color: #fff;
+}
+
+button[type="submit"] {
+  background-color: var(--verde-medio);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--verde-oscuro);
+}
+
+/*----------------------------------------------
+                  FOOTER
+-----------------------------------------------*/
+.foot-page {
+  margin-top: 60px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--verde-profundo);
+  padding: 20px 0;
+  opacity: 0.9;
+}

@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("regNegocio");
   const categSelect = document.getElementById("categoria");
 
+ 
+
   //CARGO CATEGORÍAS PRIMERO
   async function cargarCategorias() {
     try {

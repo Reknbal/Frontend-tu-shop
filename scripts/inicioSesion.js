@@ -24,6 +24,10 @@ document.getElementById("formLogin").addEventListener("submit", async (e) => {
     localStorage.setItem("token", data.token);
     localStorage.setItem("usuario", JSON.stringify(data.usuario));
 
+    if(data.usuario.membresia){
+      localStorage.setItem("membresia", data.usuario.membresia);
+    }
+
     alert("Inicio de sesión exitoso.");
 
     // Redirigir al index

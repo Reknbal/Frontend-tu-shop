@@ -35,9 +35,16 @@
             <input type="text" id="direcNegocio" placeholder="dirección">
             <!--Acá irían las categorías precargadas, traer con JS?-->
             <label for="">Categoría</label>
-            <select name="" id="categNeg">
-                <option value=""></option> 
-            </select>
+            <select name="" id="categNeg"></select>
+
+            <!--REDES, DE TENER PREMIUM-->
+            <div id="redes-container">
+                <label for="">Ingrese sus redes</label>
+                <input type="text" id="instagram" class="input-red-social" placeholder="Instagram">
+                <input type="text" id="facebook" class="input-red-social" placeholder="Facebook">
+                <input type="text" id="tiktok" class="input-red-social" placeholder="TikTok">
+                <p id="mensajeRedes" style="color: gray; font-size: 0.9rem;"></p>
+            </div>
             <button type="submit" id="btn-reg">Aceptar</button>
         </form>
     </div>
@@ -45,6 +52,6 @@
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../scripts/regNeg.js"></script>
+    <script src="../scripts/regNeg.js"></script>
 </body>
 </html>

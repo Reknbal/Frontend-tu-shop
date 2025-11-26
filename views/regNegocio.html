@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThuShop</title>
+</head>
+<body>
+    <header>
+        
+        <div class="Logo"><a href="#"><img src="icono.jpg" width="130px" height="80" alt="LOGO"></a></div>
+        <nav class="Menu">
+            
+            <ul>
+                <button id="bTn-Regis"><a href="#" >Reggistrarse</a></button>
+                <button id="bTn-IniS"><a href="#" >Inicia sesion</a></button>
+                <button><a href="#"><svg class="w-[43px] h-[43px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="0.8" d="M5 7h14M5 12h14M5 17h14"/>
+            </svg>
+                </a></button>           
+            </ul>
+        </nav>
+   
+    </header>
+    <div class="container-form">
+        <h1>Ingresa los datos de tu negocio.</h1>
+        <form action="" id="regNegocio">
+            <label for="">Nombre de su negocio</label>
+            <input type="text" id="negocio" placeholder="Ingrese aquí el nombre" required>
+            <label for="">Descripción</label>
+            <input type="text" id="descripNeg" placeholder="Descripción" required>
+            <label for="">Ingrese una imagen de presentación de su negocio</label>
+            <input type="file" id="imagen" accept="image/*">
+            <label for="">Dirección</label>
+            <input type="text" id="direcNegocio" placeholder="dirección">
+            <!--Acá irían las categorías precargadas, traer con JS?-->
+            <label for="">Categoría</label>
+            <select name="" id="categNeg"></select>
+
+            <!--REDES, DE TENER PREMIUM-->
+            <div id="redes-container">
+                <label for="">Ingrese sus redes</label>
+                <input type="text" id="instagram" class="input-red-social" placeholder="Instagram">
+                <input type="text" id="facebook" class="input-red-social" placeholder="Facebook">
+                <input type="text" id="tiktok" class="input-red-social" placeholder="TikTok">
+                <p id="mensajeRedes" style="color: gray; font-size: 0.9rem;"></p>
+            </div>
+            <button type="submit" id="btn-reg">Aceptar</button>
+        </form>
+    </div>
+    <div class="foot-page">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/regNeg.js"></script>
+</body>
+</html>
